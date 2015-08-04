@@ -1,0 +1,89 @@
+============= Logistic Regression =============
+Logistic regression took 0.87 seconds.
+
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00        45
+          1       0.88      0.88      0.88        52
+          2       0.96      0.96      0.96        53
+          3       0.93      0.96      0.95        54
+          4       0.98      1.00      0.99        48
+          5       0.98      0.96      0.97        57
+          6       0.95      0.98      0.97        60
+          7       1.00      0.94      0.97        53
+          8       0.90      0.90      0.90        61
+          9       0.95      0.93      0.94        57
+
+avg / total       0.95      0.95      0.95       540
+
+============= Grid Search =============
+GridSearchCV took 66.32 seconds for 15 candidate parameter settings.
+Model with rank: 1
+Mean validation score: 0.955 (std: 0.004)
+Parameters: {'C': 0.5, 'intercept_scaling': 0.10000000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+
+Model with rank: 2
+Mean validation score: 0.955 (std: 0.004)
+Parameters: {'C': 0.5, 'intercept_scaling': 0.77500000000000002, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+
+Model with rank: 3
+Mean validation score: 0.955 (std: 0.004)
+Parameters: {'C': 0.5, 'intercept_scaling': 0.32500000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+
+Best parameters set found on development set:
+
+{'C': 0.5, 'intercept_scaling': 0.10000000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+
+Grid scores on development set:
+
+0.955 (+/-0.009) for {'C': 0.5, 'intercept_scaling': 0.10000000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.955 (+/-0.008) for {'C': 0.5, 'intercept_scaling': 0.32500000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.955 (+/-0.008) for {'C': 0.5, 'intercept_scaling': 0.55000000000000004, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.955 (+/-0.009) for {'C': 0.5, 'intercept_scaling': 0.77500000000000002, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.955 (+/-0.008) for {'C': 0.5, 'intercept_scaling': 1.0, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.951 (+/-0.014) for {'C': 1, 'intercept_scaling': 0.10000000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.951 (+/-0.014) for {'C': 1, 'intercept_scaling': 0.32500000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.951 (+/-0.014) for {'C': 1, 'intercept_scaling': 0.55000000000000004, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.951 (+/-0.013) for {'C': 1, 'intercept_scaling': 0.77500000000000002, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.953 (+/-0.013) for {'C': 1, 'intercept_scaling': 1.0, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.950 (+/-0.019) for {'C': 1.5, 'intercept_scaling': 0.10000000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.949 (+/-0.020) for {'C': 1.5, 'intercept_scaling': 0.32500000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.949 (+/-0.019) for {'C': 1.5, 'intercept_scaling': 0.55000000000000004, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.951 (+/-0.022) for {'C': 1.5, 'intercept_scaling': 0.77500000000000002, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+0.955 (+/-0.018) for {'C': 1.5, 'intercept_scaling': 1.0, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.0001, 'class_weight': None}
+()
+Detailed classification report:
+
+The model is trained on the full development set.
+The scores are computed on the full evaluation set.
+
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00        45
+          1       0.89      0.92      0.91        52
+          2       0.96      0.98      0.97        53
+          3       0.95      0.96      0.95        54
+          4       0.98      0.98      0.98        48
+          5       0.98      0.96      0.97        57
+          6       0.97      0.98      0.98        60
+          7       0.98      0.94      0.96        53
+          8       0.92      0.89      0.90        61
+          9       0.93      0.93      0.93        57
+
+avg / total       0.95      0.95      0.95       540
+
+
+============= Random Search =============
+RandomizedSearchCV took 44.04 seconds for 20 candidates parameter settings.
+Model with rank: 1
+Mean validation score: 0.957 (std: 0.008)
+Parameters: {'C': 2, 'intercept_scaling': 0.77500000000000002, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.001, 'class_weight': None}
+
+Model with rank: 2
+Mean validation score: 0.955 (std: 0.007)
+Parameters: {'C': 1, 'intercept_scaling': 0.32500000000000001, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.001, 'class_weight': None}
+
+Model with rank: 3
+Mean validation score: 0.955 (std: 0.007)
+Parameters: {'C': 1, 'intercept_scaling': 1.0, 'max_iter': 100, 'penalty': 'l1', 'tol': 0.001, 'class_weight': None}
+
